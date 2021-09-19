@@ -1,4 +1,1 @@
-GoogEvent({
-    t: "pageview",
-    dp: "/home",
-});
+GoogEvent("search", { search_term: "GameMaker" });

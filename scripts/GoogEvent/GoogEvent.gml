@@ -1,34 +1,23 @@
-/// @param struct
+/// @param name
+/// @param [parametersStruct]
 /// 
-/// Sends an event to Google Analytics
-/// Struct must contain key-value pairs in accordance with Google Analytics parameters
-/// 
-/// https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters
+/// Sends an event to Google Analytics with the given name and, optionally, some parameters defined in a struct
+/// It is recommended that parameters conform to the event specification, see https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events
 
-function GoogEvent(_struct)
+function GoogEvent(_name, _parameters = {})
 {
-    if ((global.__GoogClientID == undefined) || (global.__GoogPayloadCommon == undefined))
-    {
-        show_error("Google Analytics:\nClient ID unset, please call GoogClientIDSet()\n ", true);
-        return undefined;
-    }
+    var _data = {
+        client_id: global.__GoogClientID,
+        events: [
+            {
+                name: _name,
+                params: _parameters
+            }
+        ]
+    };
     
-    var _string = "";
-    
-    var _names = variable_struct_get_names(_struct);
-    var _length = array_length(_names);
-    
-    var _i = 0;
-    repeat(_length)
-    {
-        _string += _names[_i] + "=" + __GoogURLEncode(_struct[$ _names[_i]]) + "&";
-        ++_i;
-    }
-    
-    _string += global.__GoogPayloadCommon;
-    
-    var _cacheBuster = round(__GoogXORShift32Random(999999));
-    var _id = http_post_string("https://www.google-analytics.com/collect?payload_data&z=" + string(_cacheBuster), _string);
+    var _string = json_stringify(_data);
+    var _id = http_post_string(global.__GoogURL, _string);
     if (GOOG_DEBUG) __GoogTrace("Sent HTTP request for event \"", _string, "\"");
     
     if (global.__GoogFirstRequestTime == undefined) global.__GoogFirstRequestTime = current_time;
