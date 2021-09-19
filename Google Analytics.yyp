@@ -1,0 +1,56 @@
+{
+  "resources": [
+    {"id":{"name":"__GoogConfig","path":"scripts/__GoogConfig/__GoogConfig.yy",},"order":0,},
+    {"id":{"name":"GoogEvent","path":"scripts/GoogEvent/GoogEvent.yy",},"order":1,},
+    {"id":{"name":"GoogAsyncHTTPEvent","path":"scripts/GoogAsyncHTTPEvent/GoogAsyncHTTPEvent.yy",},"order":2,},
+    {"id":{"name":"GoogClientIDGet","path":"scripts/GoogClientIDGet/GoogClientIDGet.yy",},"order":4,},
+    {"id":{"name":"GoogClientIDForce","path":"scripts/GoogClientIDForce/GoogClientIDForce.yy",},"order":3,},
+    {"id":{"name":"__GoogSystem","path":"scripts/__GoogSystem/__GoogSystem.yy",},"order":0,},
+    {"id":{"name":"oTest","path":"objects/oTest/oTest.yy",},"order":1,},
+    {"id":{"name":"rMain","path":"rooms/rMain/rMain.yy",},"order":2,},
+  ],
+  "Options": [
+    {"name":"Amazon Fire","path":"options/amazonfire/options_amazonfire.yy",},
+    {"name":"Android","path":"options/android/options_android.yy",},
+    {"name":"HTML5","path":"options/html5/options_html5.yy",},
+    {"name":"iOS","path":"options/ios/options_ios.yy",},
+    {"name":"Linux","path":"options/linux/options_linux.yy",},
+    {"name":"macOS","path":"options/mac/options_mac.yy",},
+    {"name":"Main","path":"options/main/options_main.yy",},
+    {"name":"PlayStation 4","path":"options/ps4/options_ps4.yy",},
+    {"name":"Switch","path":"options/switch/options_switch.yy",},
+    {"name":"tvOS","path":"options/tvos/options_tvos.yy",},
+    {"name":"Windows","path":"options/windows/options_windows.yy",},
+    {"name":"Windows UWP","path":"options/windowsuap/options_windowsuap.yy",},
+    {"name":"Xbox One","path":"options/xboxone/options_xboxone.yy",},
+    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
+  ],
+  "isDnDProject": false,
+  "isEcma": false,
+  "tutorialPath": "",
+  "configs": {
+    "name": "Default",
+    "children": [],
+  },
+  "RoomOrderNodes": [
+    {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
+  ],
+  "Folders": [
+    {"folderPath":"folders/Google Analytics.yy","order":0,"resourceVersion":"1.0","name":"Google Analytics","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Google Analytics/(System).yy","order":5,"resourceVersion":"1.0","name":"(System)","tags":[],"resourceType":"GMFolder",},
+  ],
+  "AudioGroups": [
+    {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+  ],
+  "TextureGroups": [
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
+  ],
+  "IncludedFiles": [],
+  "MetaData": {
+    "IDEVersion": "23.1.1.385",
+  },
+  "resourceVersion": "1.4",
+  "name": "Google Analytics",
+  "tags": [],
+  "resourceType": "GMProject",
+}
