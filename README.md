@@ -1,1 +1,1 @@
-# GoogleAnalytics
+Test project to interact with Google Analytics' [Universal Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1). Not meant to be used by anyone at any time, but might be informative to people sniffing around for GA solutions in GMS2.
