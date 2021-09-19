@@ -1,6 +1,6 @@
 /// Call this function in the Async HTTP Event of a persistent object
 /// 
-/// Isn't not *technically* required use this function but it is very useful for tracking down bugs
+/// It's not *technically* required to ever call this function but it is very useful for tracking down bugs
 
 function GoogAsyncHTTPEvent()
 {
