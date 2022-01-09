@@ -6,7 +6,7 @@
     "path": "folders/Google Analytics.yy",
   },
   "resourceVersion": "1.0",
-  "name": "GoogEvent",
+  "name": "GoogUserIDGet",
   "tags": [],
   "resourceType": "GMScript",
 }

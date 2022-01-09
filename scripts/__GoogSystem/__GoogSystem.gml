@@ -1,4 +1,8 @@
+#macro GOOG_USER_PROPERTIES  global.__GoogUserProperties
+
 global.__GoogClientID         = undefined;
+global.__GoogUserID           = undefined;
+global.__GoogUserProperties   = {};
 global.__GoogHTTPResponseMap  = ds_map_create();
 global.__GoogFirstRequestTime = undefined;
 global.__GoogUsingAsyncEvent  = undefined;
@@ -52,9 +56,16 @@ if (_generateClientID)
     __GoogTrace("Persistent cache saved to disk");
 }
 
+//If we don't have a user ID, set that now
+if (global.__GoogUserID == undefined) GoogUserIDForce(md5_string_utf8(global.__GoogClientID));
 
 
 
+//Google Analytics wants timestamps using microseconds for some reason?
+function __GoogUnixTimeMicroseconds()
+{
+    return floor(1000000*date_second_span(25569, date_current_datetime()));
+}
 
 /// @param [hyphenate=false]
 function __GoogGenerateUUID4String(_hyphenate = false)

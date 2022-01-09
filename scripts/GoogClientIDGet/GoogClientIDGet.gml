@@ -1,4 +1,4 @@
-/// Returns the client ID set for the current user
+/// Returns the client ID set for the current client
 
 function GoogClientIDGet()
 {

@@ -10,7 +10,7 @@
 //Name of the file on disk to store the client ID so that it persists between sessions
 //A client ID is automatically generated for the user when this library is run for the first time
 //If the cache file cannot be found then a new client ID will be generated
-#macro GOOG_PERSISTENT_CACHE  "goog_cache.json"
+#macro GOOG_PERSISTENT_CACHE  "google_analytics_cache.json"
 
 //Set this to <true> to see more information about what events this library is sending
 //This is verbose output and likely not useful in production builds

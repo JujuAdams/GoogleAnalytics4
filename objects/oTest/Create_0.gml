@@ -1,1 +1,1 @@
-GoogEvent("search", { search_term: "GameMaker" });
+GoogHit("search", { search_term: "GameMaker" });
