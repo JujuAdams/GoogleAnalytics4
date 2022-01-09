@@ -24,3 +24,9 @@ Please be careful with what events, and the quantity of events, that you send to
 - Parameter values (including item parameter values) must be 100 character or fewer
 - Item parameters can have a maximum of 10 custom parameters
 - The HTTP request body must be smaller than 130kB
+
+This implementation also includes a way to send additional information about the user to Google using "user properties". User properties can be set by setting variables on the `GOOG_USER_PROPERTIES` struct. This struct is held in global scope so can be accessed everywhere. In order to filter data using user properties you'll need to set up custom dimensions and metrics [in the Google Analytics backend](https://support.google.com/analytics/answer/10075209?visit_id=637773252533763572-1115991491&rd=1). There are some limitations on user properties as well:
+- User property names must be 24 characters or fewer
+- User property values must be 36 characters or fewer
+
+Finally, this library automatically creates a client ID and user ID to differentiate players. If you'd like to override the in-built behaviour for something else, you can use the `GoogClientIDForce()` and `GoogUserIDForce()` functions. The default client ID and user ID values are randomly generated and thus anonymize users. I strongly recommend not using idenifying information as the client ID or user ID (e.g. don't use a player's Steam ID as an analytics user ID, consider using HMAC to hash it first). Furthermore, this library is hardcoded to prevent analytics data that you send to Google being used for targeted advertising by third parties.
