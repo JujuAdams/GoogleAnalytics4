@@ -25,7 +25,7 @@ Please be careful with what events, and the quantity of events, that you send to
 - Item parameters can have a maximum of 10 custom parameters
 - The HTTP request body must be smaller than 130kB
 
-This implementation also includes a way to send additional information about the user to Google using "user properties". User properties can be set by setting variables on the `GOOG_USER_PROPERTIES` struct. This struct is held in global scope so can be accessed everywhere. In order to filter data using user properties you'll need to set up custom dimensions and metrics [in the Google Analytics backend](https://support.google.com/analytics/answer/10075209?visit_id=637773252533763572-1115991491&rd=1). There are some limitations on user properties as well:
+This implementation also includes a way to send additional information about the user to Google using "user properties". User properties can be set by setting variables on the `GOOG_USER_PROPERTIES` struct. This struct is held in global scope so can be accessed everywhere. In order to filter data using user properties you'll need to set up custom dimensions and metrics [in the Google Analytics backend](https://support.google.com/analytics/answer/10075209?visit_id=637773252533763572-1115991491&rd=1). There are limitations on user properties as well:
 - User property names must be 24 characters or fewer
 - User property values must be 36 characters or fewer
 
