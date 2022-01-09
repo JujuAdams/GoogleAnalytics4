@@ -22,7 +22,7 @@ function GoogAsyncHTTPEvent()
         }
         else
         {
-            __GoogTrace("Warning! HTTP request failed, check your event name and parameters          (", global.__GoogHTTPResponseMap[? _id], ")");
+            __GoogTrace("Warning! HTTP request failed, check your event name and parameters (", global.__GoogHTTPResponseMap[? _id], ")");
         }
         
         ds_map_delete(global.__GoogHTTPResponseMap, _id);
