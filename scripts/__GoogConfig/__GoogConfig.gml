@@ -5,6 +5,7 @@
 
 //The measurement ID that's generataed for your property
 //This can be found in the admin section of the Google Analytics backend
+//https://support.google.com/analytics/answer/9539598
 #macro GOOG_MEASUREMENT_ID  ""
 
 //Name of the file on disk to store the client ID so that it persists between sessions
