@@ -1,4 +1,4 @@
-<h1 align="center">Google Analytics 1.0.0</h1>
+<h1 align="center">Google Analytics 4 v1.0.0</h1>
 
 <p align="center">Implementation of Google's <a href="https://developers.google.com/analytics/devguides/collection/protocol/ga4">Measurement Protocol v4</a> for GameMaker Studio 2 by <b>@jujuadams</b></p>
 
