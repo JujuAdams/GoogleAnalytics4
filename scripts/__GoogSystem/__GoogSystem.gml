@@ -1,9 +1,9 @@
 #macro GOOG_USER_PROPERTIES  global.__GoogUserProperties
 
-#macro __GOOG_VERSION  "1.0.0"
-#macro __GOOG_DATE     "2022-01-09"
+#macro __GOOG_VERSION  "1.0.1"
+#macro __GOOG_DATE     "2024-08-13"
 
-__GoogTrace("Welcome to Google Analytics Measuremenet Protocol (v4), implemented by @jujuadams! This is version " + __GOOG_VERSION + ", " + __GOOG_DATE);
+__GoogTrace("Welcome to Google Analytics Measuremenet Protocol (v4), implemented by Juju Adams! This is version " + __GOOG_VERSION + ", " + __GOOG_DATE);
 
 global.__GoogClientID         = undefined;
 global.__GoogUserID           = undefined;
